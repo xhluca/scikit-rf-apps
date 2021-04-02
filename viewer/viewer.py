@@ -9,19 +9,19 @@ import io
 import os
 import json
 import re
-from uuid import uuid4
 
 import dash
 import dash_table
 import numpy as np
 import matplotlib.pyplot as plt
+import skrf as rf
 import plotly.graph_objs as go
 import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output, State
 from dash.exceptions import PreventUpdate
 from flask_caching import Cache
-import skrf as rf
+from uuid import uuid4
 
 
 external_stylesheets = [
